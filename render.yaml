@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sofascore-proxy
+    env: docker
+    plan: free
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/sofascore-proxy-*.jar
+    envVars:
+      - key: PORT
+        value: 8080
