@@ -1,0 +1,1 @@
+web: java -jar target/sofascore-proxy-*.jar
